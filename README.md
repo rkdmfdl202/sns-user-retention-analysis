@@ -244,14 +244,16 @@ R3 시점에는 실제로 식별 가능한 행동 기준이 필요했습니다.
 ```text
 project01-retention-analysis/
 ├─ README.md
-├─ notebooks/     # 개인 담당 분석 Notebook
+├─ notebooks/     # 개인 담당 분석 Notebook (Activation.ipynb 포함)
 ├─ sql/           # 분석용 SQL
 ├─ images/        # 포트폴리오용 시각화
 └─ docs/          # 프로젝트 상세 설명
 ```
 
-현재 저장소는 포트폴리오 정리용으로 먼저 구성했으며,  
-개인 담당 분석 코드는 정리 후 각 폴더에 순차적으로 추가할 예정입니다.
+현재 공개한 개인 담당 분석 노트북: **[Activation.ipynb](notebooks/Activation.ipynb)**  
+48h Activation 사용자 추출, 초기 강도·지속성 기준 비교, 4개 행동 세그먼트, 주차별 Retention 및 카이제곱 검정을 포함합니다.  
+
+원본 CSV 파일은 기업 내부 데이터이므로 저장소에 포함하지 않았습니다. 해당 데이터 없이는 노트북을 재실행할 수 없습니다.
 
 ---
 
