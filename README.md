@@ -4,6 +4,9 @@
 > 6인 팀 프로젝트 중 **현상·문제 정의 → 사용자 행동·Retention 분석 → R3 재참여 타겟·시점·액션 도출**까지 제가 담당한 영역을 포트폴리오 목적으로 정리한 저장소입니다.  
 > **A/B Test 상세 설계는 팀 내 별도 담당자가 수행했습니다.**
 
+📓 **[개인 담당 전체 분석 코드 바로 보기 — retention_analysis.ipynb](retention_analysis.ipynb)**  
+48h Activation, 초기 행동 기준, 세그먼트, Weekly Retention, 카이제곱 검정 코드를 하나의 노트북에서 볼 수 있습니다.
+
 ---
 
 ## 1. Project Overview
@@ -243,17 +246,16 @@ R3 시점에는 실제로 식별 가능한 행동 기준이 필요했습니다.
 
 ```text
 project01-retention-analysis/
-├─ README.md
-├─ notebooks/     # 개인 담당 분석 Notebook (Activation.ipynb 포함)
-├─ sql/           # 분석용 SQL
-├─ images/        # 포트폴리오용 시각화
-└─ docs/          # 프로젝트 상세 설명
+├─ README.md                    # 프로젝트 소개 및 분석 결과
+├─ retention_analysis.ipynb     # 개인 담당 분석 전체 코드
+└─ .gitignore                   # 원본 데이터 제외 설정
 ```
 
-현재 공개한 개인 담당 분석 노트북: **[Activation.ipynb](notebooks/Activation.ipynb)**  
-48h Activation 사용자 추출, 초기 강도·지속성 기준 비교, 4개 행동 세그먼트, 주차별 Retention 및 카이제곱 검정을 포함합니다.  
+**[retention_analysis.ipynb 바로 열기](retention_analysis.ipynb)**
 
-원본 CSV 파일은 기업 내부 데이터이므로 저장소에 포함하지 않았습니다. 해당 데이터 없이는 노트북을 재실행할 수 없습니다.
+노트북은 다음 분석을 한 파일에서 확인할 수 있도록 구성했습니다: 48h Activation 사용자 추출 → 초기 강도·지속성 기준 검토 → 4개 행동 세그먼트 생성 → Weekly Retention 비교 → 카이제곱 검정.
+
+현재 저장소에는 **별도 SQL 쿼리 파일이 없습니다.** 노트북은 Python 분석 코드를 정리한 것으로, SQL 분석을 포함한다고 주장하지 않습니다. 기업 내부 원본 CSV가 없으므로 코드를 그대로 재실행할 수는 없습니다.
 
 ---
 
